@@ -1,0 +1,48 @@
+.header {
+  grid-column: full-start / col-end 6;
+  padding: 4rem 8rem;
+  background-size: cover;
+  background-position: center;
+  background-image: linear-gradient(
+      rgba($color-secondary, 0.93),
+      rgba($color-secondary, 0.93)
+    ),
+    url(../../img/hero.jpeg);
+
+  @media only screen and (max-width: $mq-small) {
+    grid-column: full-start/full-end;
+  }
+
+  @media only screen and (max-width: $mq-smallest) {
+    padding: 4rem 5rem;
+  }
+}
+
+.section-realtors {
+  background-color: var(--color-secondary);
+  grid-column: col-start 7 / full-end;
+
+  @media only screen and (max-width: $mq-small) {
+    grid-row: 3;
+    grid-column: full-start/full-end;
+    padding: 8rem;
+  }
+}
+
+.section-features {
+  grid-column: center-start / center-end;
+  margin: 15rem 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-gap: 6rem;
+  align-items: start;
+}
+
+.section-homes {
+  grid-column: center-start / center-end;
+}
+
+.section-gallery {
+  background-color: var(--color-light-1);
+  grid-column: full-start / full-end;
+}

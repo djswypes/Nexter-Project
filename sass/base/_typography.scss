@@ -1,0 +1,78 @@
+body {
+  font-family: var(--font-primary);
+  font-weight: 300;
+  color: var(--color-grey-dark-2);
+  line-height: 1.6;
+}
+
+%heading {
+  font-family: var(--font-display);
+  font-weight: 400;
+}
+.heading-1 {
+  @extend %heading;
+
+  color: var(--color-grey-light-1);
+  font-size: 4.5rem;
+  line-height: 1;
+}
+
+.heading-2 {
+  @extend %heading;
+
+  color: var(--color-grey-light-1);
+  font-size: 4rem;
+  font-style: italic;
+  line-height: 1;
+
+  &--light {
+    color: var(--color-grey-light-1);
+  }
+
+  &--dark {
+    color: var(--color-grey-dark-1);
+  }
+}
+
+.heading-3 {
+  @extend %heading;
+
+  color: var(--color-primary);
+  font-size: 1.6rem;
+  text-transform: uppercase;
+}
+
+.heading-4 {
+  @extend %heading;
+
+  font-size: 2rem;
+
+  &--light {
+    color: var(--color-grey-light-1);
+  }
+
+  &--dark {
+    color: var(--color-grey-dark-1);
+  }
+}
+
+.btn {
+  border: none;
+  border-radius: 0;
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  background-color: var(--color-primary);
+  padding: 1.8rem 3rem;
+  cursor: pointer;
+  color: #fff;
+  text-transform: uppercase;
+  transition: all 0.2s;
+
+  &:hover {
+    background-color: var(--color-primary-dark);
+  }
+}
+
+.txt-up {
+  text-transform: uppercase;
+}
